@@ -1,0 +1,14 @@
+[package]
+name = "rloganalyzer"
+version = "0.1.0"
+authors = ["Per Böhlin <per.bohlin@devconsoft.se>"]
+
+[dependencies]
+regex = "0.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_yaml = "0.7"
+
+
+[dev-dependencies]
+unindent = "0.1"

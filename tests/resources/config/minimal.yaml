@@ -1,0 +1,34 @@
+definitions:
+
+  - title: Title A
+    id: ID-A
+    desc: |
+      Multiline description
+      of definition A
+    markers:
+      - 'first'
+      - 'second' # missing sample
+    samples:
+      - line with first marker
+
+  - title: Title B
+    id: ID-B
+    desc: |
+      Multiline description
+      of definition B
+    markers:
+      - 'first'
+    samples:
+      - line with first marker
+
+  - title: Title C
+    id: ID-C
+    desc: Description C
+    markers:
+      - 'wrap it up'
+    invalidators:
+      - 'invalidator'
+      - 'wrap it up'
+    samples:
+      - invalidator
+      - wrap it up
