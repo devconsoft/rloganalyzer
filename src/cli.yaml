@@ -1,0 +1,34 @@
+name: rloganalyzer
+version: "0.1.0"
+author: Per Böhlin <per.bohlin@devconsoft.se>
+about: Log-analyzer written in rust.
+args:
+    - CONFIG:
+        value_name: CONFIG_FILE
+        help: Configuration definition file to use.
+        required: true
+        index: 1
+    - input:
+        short: i
+        long: in
+        value_name: INPUT_FILE
+        help: Sets the input file to use. Dash (-) for stdin.
+        takes_value: true
+    - output:
+        short: o
+        long: output
+        value_name: OUTPUT_FILE
+        help: Sets the output file for the report to use. Dash (-) for stdout.
+    - summary:
+        short: s
+        long: summary
+        value_name: SUMMARY_FILE
+        help: Sets the summary output file. Dash (-) for stdout.
+    - verbose:
+        short: v
+        long: verbose
+        multiple: true
+        help: Sets the level of verbosity
+subcommands:
+    - config-check:
+        about: Runs configuration definition check - then exits.

@@ -4,3 +4,5 @@
 pub mod definition;
 pub mod rule;
 pub mod definitions;
+
+pub use self::definitions::Definitions;

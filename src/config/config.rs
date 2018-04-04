@@ -5,7 +5,7 @@
 #[derive(Clone, Copy, PartialEq, Debug, Eq)]
 pub enum Command {
     ConfigCheck,
-    Unknown,
+    None,
 }
 
 pub struct Config {
@@ -21,7 +21,7 @@ impl Config {
                 if args[1] == "cfgcheck" {
                     Command::ConfigCheck
                 } else {
-                    Command::Unknown
+                    Command::None
                 }
             };
         let def_file = args[2].clone();
@@ -35,7 +35,7 @@ mod tests {
     use super::{Config, Command};
 
     #[test]
-    fn new_config() {
+    fn config_new() {
         let args = vec!["ranalyzer".to_string(), "cfgcheck".to_string(), "path".to_string()];
         let cfg = Config::new(&args);
         assert_eq!(cfg.command, Command::ConfigCheck);
