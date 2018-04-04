@@ -1,0 +1,29 @@
+plugins.paths:
+    - plugins
+ext.zflash.enabled: false
+ext.telnet.enabled: false
+ext.powerswitch.enabled: false
+ext.powerswitchcc.enabled: false
+ext.gude.enabled: false
+ext.zacthrift.enabled: false
+ext.zacthriftcc.enabled: false
+ext.zserial.enabled: false
+ext.connectioncheck.enabled: false
+ext.stbrecover.enabled: false
+ext.sutevents.enabled: false
+ext.zserialcc.enabled: false
+ext.telnetcc.enabled: false
+ext.sut.enabled: false
+ext.gtestrunner.enabled: false
+ext.monitor.enabled: false
+ext.linuxmonitor.enabled: false
+ext.rcu.enabled: false
+ext.iprcu.enabled: false
+ext.iprcucc.enabled: false
+ext.multirunner.enabled: false
+
+ext.hostshellexec.enabled: true
+host.shell.exec.enabled: true
+logdefaults.enabled: true
+
+log.info: [k2.extension.zk2component]

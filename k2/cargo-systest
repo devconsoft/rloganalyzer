@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eu
+
+K2_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "${K2_DIR}"
+zk2 run tests
