@@ -25,10 +25,12 @@ fn get_config(matches: &ArgMatches) -> Config {
 }
 
 fn print_config(cfg: &Config) {
-    println!("def      : {}", cfg.def_file);
-    println!("command  : {:?}", cfg.command);
-    println!("in       : {}", cfg.in_file);
-    println!("out      : {}", cfg.out_file);
-    println!("summary  : {}", cfg.summary_file);
-    println!("verbosity: {}", cfg.verbosity);
+    if cfg.verbosity > 0 {
+        println!("def      : {}", cfg.def_file);
+        println!("command  : {:?}", cfg.command);
+        println!("in       : {}", cfg.in_file);
+        println!("out      : {}", cfg.out_file);
+        println!("summary  : {}", cfg.summary_file);
+        println!("verbosity: {}", cfg.verbosity);
+    }
 }

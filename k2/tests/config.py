@@ -28,12 +28,18 @@ verbosity: 2"""
 
 @requires(rlog='RLogAnalyzer')
 def test_config_default(rlog):
-    output = rlog('CFG_FILE')
+    output = rlog('-v CFG_FILE')
     expected = """\
 def      : CFG_FILE
 command  : Scan
 in       : -
 out      : -
 summary  : -
-verbosity: 0"""
+verbosity: 1"""
     assert expected in output, output
+
+@requires(rlog='RLogAnalyzer')
+def test_config_not_printed_with_verbosity_zero(rlog):
+    output = rlog('CFG_FILE')
+    expected = "def      : CFG_FILE"
+    assert expected not in output, output
