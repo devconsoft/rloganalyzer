@@ -7,3 +7,6 @@ See LICENSE-APACHE and LICENSE-MIT.
 
 ## Description
 Not ready for use.
+
+## TODO
+* Add logging: https://github.com/drakulix/simplelog.rs
