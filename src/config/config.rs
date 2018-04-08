@@ -3,6 +3,7 @@
 
 use super::Command;
 
+#[derive(Clone, PartialEq, Debug, Eq)]
 pub struct Config {
     pub def_file: String,
     pub command: Command,

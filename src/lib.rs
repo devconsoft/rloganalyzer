@@ -11,6 +11,7 @@ extern crate unindent;
 
 pub mod config;
 pub mod definition;
+pub mod datasource;
 
 pub use definition::Definitions;
 pub use config::Config;

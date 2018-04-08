@@ -12,6 +12,7 @@ fn main() {
     let matches = App::from_yaml(yaml).get_matches();
     let cfg = get_config(&matches);
     print_config(&cfg);
+    
 }
 
 fn get_config(matches: &ArgMatches) -> Config {
